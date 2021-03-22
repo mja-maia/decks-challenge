@@ -15,7 +15,9 @@
       </div>
 
       <div class="button-container">
-        <Button :onClick="handleSubmit"> Submit </Button>
+        <Button
+          :disabled="loading"
+          :onClick="handleSubmit"> {{loading ? 'Loading...' : 'Submit'}} </Button>
       </div>
     </div>
    </div>

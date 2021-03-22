@@ -149,7 +149,6 @@ function SortDeck(rotationCard: string, pileParam: string[] = []) {
     }, { 3: [], 2: [] });
   }
 
-  debugger;
   const groupCombinationCards = groupByCombination(Object.values(cardValueOccurrences));
   const fullHouse: string[][] = [];
   groupCombinationCards[3].forEach((combinationThree: string[]) => {
